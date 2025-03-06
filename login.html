@@ -120,28 +120,11 @@
         <form id="login-form">
             <input type="text" name="username" id="username" placeholder="Username" required>
             <input type="password" name="password" id="password" placeholder="Password" required>
+            <a href="register.html">Register</a></p>
             <button type="submit">Login</button>
         </form>
         <p>Don't have an account? <a href="register.html">Register</a></p>
     </div>
 
-    <script>
-        // Handle form submission with JavaScript
-        document.getElementById('login-form').addEventListener('submit', function(e) {
-            e.preventDefault(); // Prevent form from submitting normally
-
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-
-            // Check if the username and password are "john"
-            if (username === 'john' && password === 'john') {
-                // Redirect to the next page (add_data.html) if correct
-                window.location.href = 'add_data.html';
-            } else {
-                // If credentials are incorrect, alert the user
-                alert('Invalid username or password');
-            }
-        });
-    </script>
 </body>
 </html>
